@@ -2,10 +2,10 @@ class CreateAdmins < ActiveRecord::Migration
   def change
   	create_table(:admins) do |t|
   		t.string :login_id
-  		t.string :email
-  		t.string :password_hash
+  		t.string :email, null: false
+  		t.string :password_hash, null: false
 
-  		t.timestamps
+  		t.timestamps null: false
   	end
   end
 end

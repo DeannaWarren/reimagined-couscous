@@ -4,7 +4,7 @@ class CreateTestimonials < ActiveRecord::Migration
   		t.string :quote
   		t.string :citation
 
-  		t.timestamps
+  		t.timestamps null: false
   	end
   end
 end

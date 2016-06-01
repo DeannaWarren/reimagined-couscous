@@ -6,7 +6,7 @@ class CreatePages < ActiveRecord::Migration
   		t.text :text_html
   		t.integer :picture_id
 
-  		t.timestamps
+  		t.timestamps null: false
   	end
   end
 end

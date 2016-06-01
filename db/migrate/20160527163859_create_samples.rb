@@ -5,7 +5,7 @@ class CreateSamples < ActiveRecord::Migration
   		t.string :title
   		t.string :description
 
-  		t.timestamps
+  		t.timestamps null: false
   	end
   end
 end

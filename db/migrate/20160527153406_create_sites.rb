@@ -14,7 +14,7 @@ class CreateSites < ActiveRecord::Migration
   		t.integer :blog_page_id
   		t.integer :theme_index
 
-  		t.timestamps
+  		t.timestamps null: false
   	end
   end
 end

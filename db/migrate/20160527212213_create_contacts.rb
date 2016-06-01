@@ -19,7 +19,7 @@ class CreateContacts < ActiveRecord::Migration
   		t.string :zip_code
   		t.string :picture_id
 
-  		t.timestamps
+  		t.timestamps null: false
   	end
   end
 end
