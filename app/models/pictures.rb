@@ -1,3 +1,3 @@
 class Pictures < ActiveRecord::Base
-  # Remember to create a migration!
+	has_one :site, foreign_key: :home_picture_id, class_name: "Sites"
 end

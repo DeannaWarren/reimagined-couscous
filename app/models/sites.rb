@@ -1,3 +1,3 @@
 class Sites < ActiveRecord::Base
-  # Remember to create a migration!
+	belongs_to :home_picture,class_name: "Pictures"
 end
