@@ -1,3 +1,3 @@
 class Pages < ActiveRecord::Base
-	belongs_to :picture
+	belongs_to :picture, class_name: "Pictures"
 end
